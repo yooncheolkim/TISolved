@@ -32,7 +32,7 @@ public class Main {
         }
         long result = Long.MAX_VALUE;
         for (int i = 0; i < beans.length; i++) {
-            long beansToRemove = sum - beans[i] * (beans.length - i);
+            long beansToRemove = sum - (long) beans[i] * (beans.length - i);
             result = Math.min(result, beansToRemove);
         }
 
